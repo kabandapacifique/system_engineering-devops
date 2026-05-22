@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script lists the part of the filename after the first dash in the current directory
+for file in *; do
+    if [ "$file" != "*" ]; then
+        echo "$file" | cut -d'-' -f2-
+    fi
+done
